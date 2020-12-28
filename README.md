@@ -1,23 +1,17 @@
-# heroku-buildpack-ffmpeg-latest
+# heroku-buildpack-ffmpeg-release
 
-Push: [![Test](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest/workflows/Test/badge.svg?branch=master&event=push)](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster)  
-Scheduled: [![Test](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest/workflows/Test/badge.svg?branch=master&event=schedule)](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest/actions?query=workflow%3ATest+event%3Aschedule+branch%3Amaster)
-
-> If you'd like to maintain this repository, let me know!
-
-A Heroku buildpack for ffmpeg that always downloads the latest [static build](http://johnvansickle.com/ffmpeg/).
-Unlike other build packs, I never compile anything.
+A Heroku buildpack based on [jonathanong/heroku-buildpack-ffmpeg-latest](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest). The only difference is this fork downloads the latest [release static build](http://johnvansickle.com/ffmpeg/) instead of the latest git master. This should make for a more stable ffmpeg build.
 
 ## Usage
 
 Add the following to your `.buildpacks`:
 
 ```
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+https://github.com/visio-media/heroku-buildpack-ffmpeg-release.git
 ```
 
 Or run the following from the heroku command line:
 
 ```
-heroku buildpacks:add https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+heroku buildpacks:add https://github.com/visio-media/heroku-buildpack-ffmpeg-release.git
 ```
